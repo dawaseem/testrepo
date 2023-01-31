@@ -193,14 +193,41 @@
 # print(max(mylistomlist))
 
 
-def words_macher(mylist):
-    count = 0
-    for i in mylist:
-        if len(i)>1 and i[0]==i[-1]:
-            count +=1
+# def words_macher(mylist):
+#     count = 0
+#     for i in mylist:
+#         if len(i)>1 and i[0]==i[-1]:
+#             count +=1
+#
+#     return print(count)
+#
+#
+# mylist = ['bcb', '323', '545', 'shi', 'not']
+# words_macher(mylist)
 
-    return print(count)
+
+my_list = [4, 2, 3, -1, -2, 0, 1]
 
 
-mylist = ['bcb', '323', '545', 'shi', 'not']
-words_macher(mylist)
+def sortf(mylist):
+    for i in range(len(mylist)):
+        for j in range(i + 1, len(mylist)):
+            if mylist[i] < mylist[j]:
+                mylist[i], mylist[j] = mylist[j], mylist[i]
+
+    return print(mylist)
+
+
+sortf(my_list)
+
+# def last_num_list_sort(mylist):
+#     new_list = []
+#     for i in range(len(mylist)):
+#         for j in range(i+1, len(mylist)):
+#             if mylist[i][1] > mylist[j][1]:
+#                 mylist[i][1], mylist[j][1] = mylist[j][1], mylist[i][1]
+#     print(mylist)
+#
+#
+# mylist = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+# last_num_list_sort(mylist)
