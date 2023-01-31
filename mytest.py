@@ -175,14 +175,32 @@
 #
 # print(sum)
 
-def multiplier(my_list):
-    multiple = 1
+# def multiplier(my_list):
+#     multiple = 1
+#
+#     for i in my_list:
+#         multiple *= i
+#     return multiple
+#
+#
+# mylist = [1, 4, 7, 3]
+#
+# print(multiplier(mylist))
 
-    for i in my_list:
-        multiple *= i
-    return multiple
+
+# mylistomlist = [1, 5, 8, 2, 5, 3, 7]
+#
+# print(max(mylistomlist))
 
 
-mylist = [1, 4, 7, 3]
+def words_macher(mylist):
+    count = 0
+    for i in mylist:
+        if len(i)>1 and i[0]==i[-1]:
+            count +=1
 
-print(multiplier(mylist))
+    return print(count)
+
+
+mylist = ['bcb', '323', '545', 'shi', 'not']
+words_macher(mylist)
