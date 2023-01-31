@@ -164,3 +164,25 @@
 # json_data = json.dumps(data)
 # print(data)
 # print(type(json_data))
+
+
+# mylistomlist = [1, 2, 3, 4, 5, 6, 7]
+#
+# sum = 0
+#
+# for i in mylistomlist:
+#     sum += i
+#
+# print(sum)
+
+def multiplier(my_list):
+    multiple = 1
+
+    for i in my_list:
+        multiple *= i
+    return multiple
+
+
+mylist = [1, 4, 7, 3]
+
+print(multiplier(mylist))
