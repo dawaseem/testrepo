@@ -119,13 +119,48 @@
 # print(myfunc(2, 4, 10, 4))
 
 
-def argfunc(*data):
-    sum = None
+# def argfunc(*data):
+#     sum = None
+#
+#     for i in data:
+#         sum += i
+#     print(sum)
+#
+#
+# print(argfunc())
 
-    for i in data:
-        sum += i
-    print(sum)
 
+# a = [1, 2, "Ram", 3.50, "Rahul", 6]
+# b = [1, 2, "Ram", 3.50, "Rahul", 6]
+#
+# print(a == b)
 
-print(argfunc())
+# omlist = [1, 2, 3, 4, 5, 6, 7]
+# mlist = [1, 2, 3, 4, 5, 6, 7]
+# mlist[-1:] = [89, 78]
+# print("Old Lis: ", omlist)
+# print("New List: ", mlist)
 
+# print(mlist*3)
+
+# listlenth = int(input("Enter list length: "))
+# mylist =[]
+# for i in range(listlenth):
+#     mylist.append(input('Enter digit: '))
+#
+#
+# print(sorted(mylist))
+
+# mylistomlist = [1, 2, 3, 4, 5, 6, 7]
+#
+# omlist.remove(3)
+# print(omlist)
+
+# import json
+#
+# data = { "name": "John", "age": 30, "city": "New York" }
+# print(type(data))
+#
+# json_data = json.dumps(data)
+# print(data)
+# print(type(json_data))
