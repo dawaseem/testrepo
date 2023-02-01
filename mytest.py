@@ -278,12 +278,61 @@
 # print(id(new_list))
 
 
-import copy
-original_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-shallow_copy = original_list[:]
-print("Shallow Copy: ", id(shallow_copy))
-print("Original List: ", id(original_list))
-shallow_copy = copy.copy(original_list)
-print("Shallow Copy: ", id(shallow_copy))
-eep_copy = copy.deepcopy(original_list)
-print("Deep Copy: ", id(eep_copy))
+# import copy
+# original_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# shallow_copy = original_list[:]
+# print("Shallow Copy: ", id(shallow_copy))
+# print("Original List: ", id(original_list))
+# shallow_copy = copy.copy(original_list)
+# print("Shallow Copy: ", id(shallow_copy))
+# eep_copy = copy.deepcopy(original_list)
+# print("Deep Copy: ", id(eep_copy))
+
+
+# sample_list = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+
+# new_list = []
+# for i in range(len(sample_list)):
+#     if i == 0 or i == 5 or i == 4:
+# print('Here...1')
+# print(sample_list[i])
+#         new_list.append(sample_list[i])
+# print(new_list)
+
+# print('Allah')
+
+
+# prime_numbers = [2, 3, 5, 7, 9, 11, 6, 8]
+# even = [e for e in prime_numbers if e % 2!=0]
+# prime_numbers = [x for x in prime_numbers if x % 2 == 0]
+# print(prime_numbers)
+# print(even)
+
+
+# from random import shuffle
+# color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+# shuffle(color)
+# print(color)
+
+# my_list = []
+# for i in range(1, 21):
+#     my_list.append(i**2)
+# print(my_list[:5])
+# print(my_list[-5:])
+
+# list1 = [1, 3, 5, 7, 9]
+# list2=[1, 2, 4, 6, 7, 8]
+#
+# differ1 = set(list1) - set(list2)
+# differ2 = set(list2) - set(list1)
+# print(differ1)
+# print(differ2)
+#
+# differ = differ1 - differ2
+# print(list(differ))
+
+# my_list = list('waseem')
+# new_list = []
+# for i in my_list:
+#     new_list.append(i)
+# print(new_list)
