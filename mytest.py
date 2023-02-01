@@ -206,19 +206,19 @@
 # words_macher(mylist)
 
 
-my_list = [4, 2, 3, -1, -2, 0, 1]
+# my_list = [4, 2, 3, -1, -2, 0, 1]
+#
+#
+# def sortf(mylist):
+#     for i in range(len(mylist)):
+#         for j in range(i + 1, len(mylist)):
+#             if mylist[i] < mylist[j]:
+#                 mylist[i], mylist[j] = mylist[j], mylist[i]
+#
+#     return print(mylist)
 
 
-def sortf(mylist):
-    for i in range(len(mylist)):
-        for j in range(i + 1, len(mylist)):
-            if mylist[i] < mylist[j]:
-                mylist[i], mylist[j] = mylist[j], mylist[i]
-
-    return print(mylist)
-
-
-sortf(my_list)
+# sortf(my_list)
 
 # def last_num_list_sort(mylist):
 #     new_list = []
@@ -231,3 +231,59 @@ sortf(my_list)
 #
 # mylist = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
 # last_num_list_sort(mylist)
+
+
+# a = [45, 63, 80, 10, 20, 30, 10, 40, 40, 20]
+# new_list = []
+# for i in a:
+#     if i not in new_list:
+#         new_list.append(i)
+#
+# print(new_list)
+
+# list3 = ["a", "b", "c", "d", 20, 30, 10, 40, 40]
+
+# animals = ['cat', 'dog', 'rabbit', 'horse']
+# index = animals.index('dog')
+# index = animals[1]
+# print(index)
+
+# list1 = [2, 4, 8, 5, 3]
+# listx = [45,15,25]
+#
+# listx.extend(list1)
+# print(listx)
+
+# languages = ['French']
+# languages_tuple = ('Spanish', 'Portuguese')
+# languages.extend(languages_tuple)
+# print(languages)
+# languages_set = {'Chinese', 'Japanese'}
+# languages.extend(languages_set)
+# print(type(languages))
+
+# list1 = [2, 4, 8, 5, 3]
+#
+# list1.remove(7)
+# print(list1)
+# prime_numbers = [2, 3, 5, 7, 9, 11]
+# prime_numbers.clear()
+# print(prime_numbers)
+
+
+# original_list = [10, 22, 44, 23, 4]
+# new_list = list(original_list)
+# new_list = original_list
+# print(id(original_list))
+# print(id(new_list))
+
+
+import copy
+original_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+shallow_copy = original_list[:]
+print("Shallow Copy: ", id(shallow_copy))
+print("Original List: ", id(original_list))
+shallow_copy = copy.copy(original_list)
+print("Shallow Copy: ", id(shallow_copy))
+eep_copy = copy.deepcopy(original_list)
+print("Deep Copy: ", id(eep_copy))
